@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" id="theme">
+</head>
+<style>
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    </style>
+<body>
+    <div class="header">
+        <a href="#default" class="logo">Sharad Jadhav</a>
+        <div class="header-right">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="toogle-mode">
+        <button onclick="toggleTheme()" class="themes">Switch Theme</button>    
+    </div>
+    <div class="home-paragraph">
+        <div class="img">
+            <img src="img.jpeg">
+        </div>
+        <div class="img-text"><h1>Software Developer</h1><br>text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified.
+        </div>
+        </div>
+        <script>
+            function toggleTheme() {
+                var theme = document.getElementsByTagName('link')[0];
+                if (theme.getAttribute('href') == 'style.css') {
+                    theme.setAttribute('href', 'dark-mode.css');
+                } else {
+                    theme.setAttribute('href', 'style.css');
+                }
+            }
+        </script>
+    <!-- <div class="image">
+        <h1 class="text">This is Text</h1>
+    </div> -->
+</body>
+</html>
